@@ -1,0 +1,6 @@
+{
+  "name": "ODC Cost & Process Intelligence Control Tower",
+  "description": "Enterprise logistics control tower for ODC operational costing, master data rationalization, BPMN process intelligence, and cost traceability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
