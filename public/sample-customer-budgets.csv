@@ -1,0 +1,5 @@
+customerId,customerName,routeSegment,budgetRp,spendRp,leakageRp,status
+cust-sidomukti,CV Sido Mukti Jaya,Jakarta → Medan,9800000000,9420000000,520000000,WITHIN_BUDGET
+cust-logisindo,PT Logisindo Indonesia,Jakarta → Palembang,7200000000,6850000000,420000000,WITHIN_BUDGET
+cust-ekspres,PT Ekspres Kargo Indonesia,Jakarta → Yogyakarta,5500000000,5780000000,380000000,OVER_BUDGET
+cust-trans,PT Trans Indonesia,Jakarta → Makassar,12000000000,11350000000,950000000,WITHIN_BUDGET

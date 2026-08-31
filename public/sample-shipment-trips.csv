@@ -1,0 +1,6 @@
+tripId,routeId,tripCode,customerName,actualKm,totalCostRp,budgetRp,leakageRp,status,actualDepartureAt,actualArrivalAt
+trip-003,rt-jkt-smg-transjawa,TRIP-JKT-SMG-001,PT Indofood CBP Sukses Makmur,444,3850000,3900000,120000,ON_TIME,2026-08-27 08:30,2026-08-27 19:15
+trip-004,rt-jkt-bdg-cipularang,TRIP-JKT-BDG-012,PT Kahatex Textile,161.6,2340000,2200000,98000,REVIEW,2026-08-27 06:45,2026-08-27 13:10
+trip-005,rt-ckr-lampung-ferry,TRIP-CKR-LPG-003,PT Great Giant Pineapple,239.1,4620000,4500000,185000,ON_TIME,2026-08-26 15:20,2026-08-27 06:50
+trip-006,rt-jkt-ckr,TRIP-JKT-CKR-002,PT Unilever Indonesia Tbk,58.9,1240000,1200000,75000,ON_TIME,2026-08-28 07:15,2026-08-28 10:45
+trip-007,rt-jkt-sub-transjawa,TRIP-JKT-SUB-015,PT Wings Surya,790.5,7620000,7400000,310000,DELAY,2026-08-28 05:30,2026-08-28 22:30

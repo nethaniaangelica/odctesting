@@ -1,0 +1,7 @@
+segmentId,tripId,routeId,sequence,fromLocatorId,fromLocatorName,toLocatorId,toLocatorName,activityName,segmentType,actualKm,actualMinutes,startLat,startLng,endLat,endLng
+seg-7,trip-003,rt-jkt-smg-transjawa,1,loc-jkt-priok,JICT Tanjung Priok Port,loc-smg-krapyak,Kawasan Industri Candi Krapyak,Transit Loading,LOADING,0,75,-6.1039,106.8835,-6.1039,106.8835
+seg-8,trip-003,rt-jkt-smg-transjawa,2,loc-smg-krapyak,Kawasan Industri Candi Krapyak,loc-smg-krapyak,Kawasan Industri Candi Krapyak,Highway Driving to Semarang,DRIVING,220.5,285,-6.9841,110.3644,-6.9841,110.3644
+seg-9,trip-003,rt-jkt-smg-transjawa,3,loc-smg-krapyak,Kawasan Industri Candi Krapyak,loc-smg-krapyak,Kawasan Industri Candi Krapyak,Unloading & Gate Pass,UNLOADING,0,62,-6.9841,110.3644,-6.9841,110.3644
+seg-10,trip-004,rt-jkt-bdg-cipularang,1,loc-jkt-priok,JICT Tanjung Priok Port,loc-bdg-gedebage,Depot Terminal Petikemas Gedebage,Gate-In & Loading,LOADING,0,68,-6.1039,106.8835,-6.1039,106.8835
+seg-11,trip-004,rt-jkt-bdg-cipularang,2,loc-bdg-gedebage,Depot Terminal Petikemas Gedebage,loc-bdg-gedebage,Depot Terminal Petikemas Gedebage,Cipularang Toll Route to Bandung,DRIVING,161.6,198,-6.9421,107.6983,-6.9421,107.6983
+seg-12,trip-004,rt-jkt-bdg-cipularang,3,loc-bdg-gedebage,Depot Terminal Petikemas Gedebage,loc-bdg-gedebage,Depot Terminal Petikemas Gedebage,Final Unloading,UNLOADING,0,45,-6.9421,107.6983,-6.9421,107.6983
