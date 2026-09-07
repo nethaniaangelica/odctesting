@@ -261,6 +261,7 @@ export interface ODCCostLine {
 export interface ODCRecord {
   id: string;
   odcNumber: string;
+  cdoNumber?: string;
   customerId: string;
   customerName: string;
   serviceRequirement: string;

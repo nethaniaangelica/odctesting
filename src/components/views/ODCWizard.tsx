@@ -64,6 +64,13 @@ export const ODCWizard: React.FC<ODCWizardProps> = ({
   const [extraReeferHours, setExtraReeferHours] = useState(0);
   const [extraKawalan, setExtraKawalan] = useState(false);
   const [extraGatePass, setExtraGatePass] = useState(120000);
+  const [generatedCdoNumber, setGeneratedCdoNumber] = useState<string | null>(null);
+
+  const handleGenerateCdo = () => {
+    const year = new Date().getFullYear();
+    const serial = String(Math.floor(1000 + Math.random() * 9000));
+    setGeneratedCdoNumber(`C-D/O-${year}-${serial}`);
+  };
 
   // Derive System Recommendations based on Inputs
   const destinationId = destinationIds[destinationIds.length - 1] || LOCATOR_POINTS[1].id;
@@ -206,6 +213,10 @@ export const ODCWizard: React.FC<ODCWizardProps> = ({
   );
 
   const handleSubmitODC = () => {
+    const resolvedCdoNumber =
+      generatedCdoNumber ?? `C-D/O-${new Date().getFullYear()}-${String(Math.floor(1000 + Math.random() * 9000))}`;
+    setGeneratedCdoNumber(resolvedCdoNumber);
+
     const costLines: ODCCostLine[] = [
       {
         id: 'cl-base',
@@ -337,6 +348,7 @@ export const ODCWizard: React.FC<ODCWizardProps> = ({
     const newOdcRecord: ODCRecord = {
       id: `odc-gen-${Date.now()}`,
       odcNumber: `ODC-2026-${Math.floor(1000 + Math.random() * 9000)}`,
+      cdoNumber: resolvedCdoNumber,
       customerId: 'cust-selected',
       customerName,
       serviceRequirement,
@@ -1152,6 +1164,14 @@ export const ODCWizard: React.FC<ODCWizardProps> = ({
 
             <div className="flex items-center gap-2.5">
               <button
+                onClick={handleGenerateCdo}
+                className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl shadow-xs flex items-center gap-2 transition-all"
+              >
+                <Send className="w-4 h-4" />
+                <span>Generate C-D/O</span>
+              </button>
+
+              <button
                 onClick={handleSubmitODC}
                 className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl shadow-xs flex items-center gap-2 transition-all"
               >
@@ -1160,6 +1180,12 @@ export const ODCWizard: React.FC<ODCWizardProps> = ({
               </button>
             </div>
           </div>
+
+          {generatedCdoNumber && (
+            <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-[11px] text-emerald-800">
+              <span className="font-bold">Generated C-D/O:</span> {generatedCdoNumber}
+            </div>
+          )}
         </div>
       )}
     </div>
